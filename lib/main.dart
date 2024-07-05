@@ -59,12 +59,14 @@ class _MyAppState extends State<MyApp> {
                       height, width, 'Light Mode', Colors.amber),
                 ),
                 GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        isDark = true;
-                      });
-                    },
-                    child: lightDarkButton(height, width, 'Dark Mode', Colors.red)),
+                  onTap: () {
+                    setState(() {
+                      isDark = true;
+                    });
+                  },
+                  child:
+                      lightDarkButton(height, width, 'Dark Mode', Colors.red),
+                ),
               ],
             ),
           ),

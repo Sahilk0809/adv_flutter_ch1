@@ -60,7 +60,16 @@ class MyHomepageState extends State<MyHomepage> {
 
 The simplest example of app state management can be learned by using the provider package. The state management with the provider is easy to understand and requires less coding. A provider is a third-party library. Here, we need to understand three main concepts to use this library.
 
-Package for Provider :- provider: ^6.1.2
+Package for Provider
+
+```bash
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0  # Check for the latest version
+```
+
+-------------------------------------------------------------------------------------------------------------------------
 
 - `ChangeNotifier` :- ChangeNotifier is a simple class, which provides change notification to its listeners. It is easy to understand, implement, and optimized for a small number of listeners. It is used for the listener to observe a model for changes. In this, we only use the notifyListener() method to inform the listeners.
 

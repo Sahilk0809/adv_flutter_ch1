@@ -19,13 +19,17 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
+    ChangeThemeScreenProvider changeThemeScreenProviderTrue =
+    Provider.of<ChangeThemeScreenProvider>(context, listen: true);
+    ChangeThemeScreenProvider changeThemeScreenProviderFalse =
+    Provider.of<ChangeThemeScreenProvider>(context, listen: false);
     return ChangeNotifierProvider(
       create: (context) => ChangeThemeScreenProvider(),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.light(),
         darkTheme: ThemeData.dark(),
-        themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
+        themeMode: changeThemeScreenProviderTrue.isDark ? ThemeMode.light : ThemeMode.dark,
         home: const ChangeTheme(),
       ),
     );

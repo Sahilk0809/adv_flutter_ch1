@@ -20,18 +20,37 @@ class ChangeTheme extends StatelessWidget {
           padding: const EdgeInsets.all(15.0),
           child: Column(
             children: [
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.arrow_back_ios),
-                  Icon(Icons.add_circle_outline),
+                  Icon(
+                    Icons.arrow_back_ios,
+                    color: changeThemeScreenProviderTrue.isDark
+                        ? Colors.white
+                        : Colors.black,
+                  ),
+                  Icon(
+                    Icons.add_circle_outline,
+                    color: changeThemeScreenProviderTrue.isDark
+                        ? Colors.white
+                        : Colors.black,
+                  ),
                 ],
               ),
               SizedBox(
-                height: height * 0.04,
+                height: height * 0.035,
               ),
-              const CircleAvatar(
-                radius: 80,
+              Container(
+                margin: const EdgeInsets.all(10),
+                height: height * 0.2,
+                width: width * 0.6,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                ),
+                child: Image.asset(
+                  'asset/avtar2.png',
+                  fit: BoxFit.cover,
+                ),
               ),
               const Text(
                 'Sahil',
@@ -41,21 +60,17 @@ class ChangeTheme extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: height * 0.1,
+                height: height * 0.07,
               ),
               ListTile(
                 leading: Icon(
                   Icons.dark_mode,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderFalse
-                          .changeThemeDataToLight()
-                          .colorScheme
-                          .primary
-                      : changeThemeScreenProviderFalse
-                          .changeThemeDataToDark()
-                          .colorScheme
-                          .primary,
+                      ? changeThemeScreenProviderTrue
+                          .changeThemeDataToDark.colorScheme.primary
+                      : changeThemeScreenProviderTrue
+                          .changeThemeDataToLight.colorScheme.primary,
                 ),
                 title: const Text(
                   'Dark Mode',
@@ -71,19 +86,18 @@ class ChangeTheme extends StatelessWidget {
                   value: changeThemeScreenProviderTrue.isDark,
                 ),
               ),
+              SizedBox(
+                height: height * 0.02,
+              ),
               ListTile(
                 leading: Icon(
                   Icons.grid_4x4,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderFalse
-                          .changeThemeDataToLight()
-                          .colorScheme
-                          .onPrimary
-                      : changeThemeScreenProviderFalse
-                          .changeThemeDataToDark()
-                          .colorScheme
-                          .onPrimary,
+                      ? changeThemeScreenProviderTrue
+                          .changeThemeDataToDark.colorScheme.onPrimary
+                      : changeThemeScreenProviderTrue
+                          .changeThemeDataToLight.colorScheme.onPrimary,
                 ),
                 title: const Text(
                   'Story',
@@ -93,19 +107,18 @@ class ChangeTheme extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: height * 0.02,
+              ),
               ListTile(
                 leading: Icon(
                   Icons.settings,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderFalse
-                          .changeThemeDataToLight()
-                          .colorScheme
-                          .secondary
-                      : changeThemeScreenProviderFalse
-                          .changeThemeDataToDark()
-                          .colorScheme
-                          .secondary,
+                      ? changeThemeScreenProviderTrue
+                          .changeThemeDataToDark.colorScheme.secondary
+                      : changeThemeScreenProviderTrue
+                          .changeThemeDataToLight.colorScheme.secondary,
                 ),
                 title: const Text(
                   'Settings and Privacy',
@@ -115,19 +128,18 @@ class ChangeTheme extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: height * 0.02,
+              ),
               ListTile(
                 leading: Icon(
                   Icons.message_outlined,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderFalse
-                          .changeThemeDataToLight()
-                          .colorScheme
-                          .onSecondary
-                      : changeThemeScreenProviderFalse
-                          .changeThemeDataToDark()
-                          .colorScheme
-                          .onSecondary,
+                      ? changeThemeScreenProviderTrue
+                          .changeThemeDataToDark.colorScheme.onSecondary
+                      : changeThemeScreenProviderTrue
+                          .changeThemeDataToLight.colorScheme.onSecondary,
                 ),
                 title: const Text(
                   'Help Center',
@@ -137,19 +149,18 @@ class ChangeTheme extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: height * 0.02,
+              ),
               ListTile(
                 leading: Icon(
                   Icons.notifications,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderFalse
-                          .changeThemeDataToLight()
-                          .colorScheme
-                          .primary
-                      : changeThemeScreenProviderFalse
-                          .changeThemeDataToDark()
-                          .colorScheme
-                          .primary,
+                      ? changeThemeScreenProviderTrue
+                          .changeThemeDataToDark.colorScheme.primary
+                      : changeThemeScreenProviderTrue
+                          .changeThemeDataToLight.colorScheme.primary,
                 ),
                 title: const Text(
                   'Notification',

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/global.dart';
+import '../../../utils/global.dart';
 
 class StepperExample extends StatefulWidget {
   const StepperExample({super.key});

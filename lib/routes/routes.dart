@@ -1,5 +1,6 @@
 import 'package:adv_flutter_ch1/main.dart';
-import 'package:adv_flutter_ch1/screens/stepper/stepper.dart';
+
+import '../screens/Lec-1.2/view/stepper.dart';
 
 class MyRoutes{
   static Map myRoutes = {

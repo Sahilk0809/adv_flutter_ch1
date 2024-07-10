@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/global.dart';
+import '../../../utils/global.dart';
 
 class ThemeChange extends StatefulWidget {
   const ThemeChange({super.key});

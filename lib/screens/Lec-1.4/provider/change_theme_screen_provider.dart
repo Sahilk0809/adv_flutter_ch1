@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class ChangeThemeScreenProvider extends ChangeNotifier {
   bool isDark = false;
 
-  void themeChange() {
-    isDark = !isDark;
+  bool themeChange() {
     notifyListeners();
+   return isDark = !isDark;
   }
 
   ThemeData changeThemeDataToLight = ThemeData(
@@ -28,7 +28,7 @@ class ChangeThemeScreenProvider extends ChangeNotifier {
       primary: Colors.amber,
       onPrimary: Colors.blue,
       secondary: Colors.pink,
-      onSecondary: Colors.amberAccent,
+      onSecondary: Colors.yellowAccent,
       error: Colors.red,
       onError: Colors.redAccent,
       surface: Colors.black,

@@ -25,15 +25,17 @@ class ChangeTheme extends StatelessWidget {
                 children: [
                   Icon(
                     Icons.arrow_back_ios,
+                    size: 30,
                     color: changeThemeScreenProviderTrue.isDark
                         ? Colors.white
-                        : Colors.black,
+                        : Colors.grey,
                   ),
                   Icon(
                     Icons.add_circle_outline,
+                    size: 30,
                     color: changeThemeScreenProviderTrue.isDark
                         ? Colors.white
-                        : Colors.black,
+                        : Colors.grey,
                   ),
                 ],
               ),
@@ -64,7 +66,9 @@ class ChangeTheme extends StatelessWidget {
               ),
               ListTile(
                 leading: Icon(
-                  Icons.dark_mode,
+                  changeThemeScreenProviderTrue.isDark
+                      ? Icons.dark_mode
+                      : Icons.light_mode,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
                       ? changeThemeScreenProviderTrue
@@ -72,16 +76,19 @@ class ChangeTheme extends StatelessWidget {
                       : changeThemeScreenProviderTrue
                           .changeThemeDataToLight.colorScheme.primary,
                 ),
-                title: const Text(
-                  'Dark Mode',
-                  style: TextStyle(
+                title: Text(
+                  changeThemeScreenProviderTrue.isDark
+                      ? 'Dark Mode'
+                      : 'Light Mode',
+                  style: const TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
                 trailing: Switch(
+                  activeColor: Colors.yellow,
                   onChanged: (value) {
-                    changeThemeScreenProviderTrue.isDark = value;
+                    changeThemeScreenProviderFalse.themeChange();
                   },
                   value: changeThemeScreenProviderTrue.isDark,
                 ),

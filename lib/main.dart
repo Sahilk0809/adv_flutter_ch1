@@ -21,10 +21,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    ChangeThemeScreenProvider changeThemeScreenProviderTrue =
-        Provider.of<ChangeThemeScreenProvider>(context, listen: true);
-    ChangeThemeScreenProvider changeThemeScreenProviderFalse =
-        Provider.of<ChangeThemeScreenProvider>(context, listen: false);
+    // ChangeThemeScreenProvider changeThemeScreenProviderTrue =
+    //     Provider.of<ChangeThemeScreenProvider>(context, listen: true);
+    // ChangeThemeScreenProvider changeThemeScreenProviderFalse =
+    //     Provider.of<ChangeThemeScreenProvider>(context, listen: false);
     // return ChangeNotifierProvider(
     //   create: (context) => ChangeThemeScreenProvider(),
     //   builder: (context, child) => MaterialApp(

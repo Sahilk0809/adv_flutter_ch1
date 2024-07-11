@@ -1,7 +1,5 @@
 import 'package:adv_flutter_ch1/screens/Lec-1.5/view/homesceen/homescreen.dart';
-import 'package:adv_flutter_ch1/utils/global.dart';
 import 'package:flutter/material.dart';
-
 import '../../../utils/list.dart';
 
 class HomeProvider extends ChangeNotifier {

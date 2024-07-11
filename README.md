@@ -139,3 +139,13 @@ return Consumer<Counter>(
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/4adb7169-1f74-4014-aebd-82f42a7ef422" height=65% width=22%>
 
 https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/b7825c39-dbbb-479a-8f4a-6ec8041531f5
+
+# 1.5 Quotes Data Solving with Provider
+
+<img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/bf222b48-ee25-4c8e-b740-a9fba4e6b70f" height=65% width=22%>
+<img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/b50590a9-ed23-41b0-9b5e-a876032caecd" height=65% width=22%>
+<img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/ca77077c-651c-490d-abe0-a067614bbd14" height=65% width=22%>
+
+https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/d6258d32-b449-4c86-a2d9-53abf294ded7
+
+

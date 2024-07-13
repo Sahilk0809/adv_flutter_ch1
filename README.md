@@ -133,12 +133,12 @@ return Consumer<Counter>(
 );  
 ```
 
-# 1.4 Provider & Change Theme using Provider
+# 1.4 Provider & Change Theme using Provider and Shared Preferences
 
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/dd622482-5de2-4bb1-8f15-541094e2c4d0" height=65% width=22%>
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/4adb7169-1f74-4014-aebd-82f42a7ef422" height=65% width=22%>
 
-https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/b7825c39-dbbb-479a-8f4a-6ec8041531f5
+https://github.com/user-attachments/assets/1d5e0e9d-ee29-46b9-97d6-6d1bfd2dd217
 
 # 1.5 Quotes Data Solving with Provider
 

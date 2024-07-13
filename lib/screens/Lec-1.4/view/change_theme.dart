@@ -71,10 +71,8 @@ class ChangeTheme extends StatelessWidget {
                       : Icons.light_mode,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderTrue
-                          .changeThemeDataToDark.colorScheme.primary
-                      : changeThemeScreenProviderTrue
-                          .changeThemeDataToLight.colorScheme.primary,
+                      ? changeThemeDataToDark.colorScheme.primary
+                      : changeThemeDataToLight.colorScheme.primary,
                 ),
                 title: Text(
                   changeThemeScreenProviderTrue.isDark
@@ -101,10 +99,8 @@ class ChangeTheme extends StatelessWidget {
                   Icons.grid_4x4,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderTrue
-                          .changeThemeDataToDark.colorScheme.onPrimary
-                      : changeThemeScreenProviderTrue
-                          .changeThemeDataToLight.colorScheme.onPrimary,
+                      ? changeThemeDataToDark.colorScheme.onPrimary
+                      :changeThemeDataToLight.colorScheme.onPrimary,
                 ),
                 title: const Text(
                   'Story',
@@ -122,10 +118,8 @@ class ChangeTheme extends StatelessWidget {
                   Icons.settings,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderTrue
-                          .changeThemeDataToDark.colorScheme.secondary
-                      : changeThemeScreenProviderTrue
-                          .changeThemeDataToLight.colorScheme.secondary,
+                      ? changeThemeDataToDark.colorScheme.secondary
+                      : changeThemeDataToLight.colorScheme.secondary,
                 ),
                 title: const Text(
                   'Settings and Privacy',
@@ -143,10 +137,8 @@ class ChangeTheme extends StatelessWidget {
                   Icons.message_outlined,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderTrue
-                          .changeThemeDataToDark.colorScheme.onSecondary
-                      : changeThemeScreenProviderTrue
-                          .changeThemeDataToLight.colorScheme.onSecondary,
+                      ? changeThemeDataToDark.colorScheme.onSecondary
+                      : changeThemeDataToLight.colorScheme.onSecondary,
                 ),
                 title: const Text(
                   'Help Center',
@@ -164,10 +156,8 @@ class ChangeTheme extends StatelessWidget {
                   Icons.notifications,
                   size: 35,
                   color: changeThemeScreenProviderTrue.isDark
-                      ? changeThemeScreenProviderTrue
-                          .changeThemeDataToDark.colorScheme.primary
-                      : changeThemeScreenProviderTrue
-                          .changeThemeDataToLight.colorScheme.primary,
+                      ? changeThemeDataToDark.colorScheme.primary
+                      : changeThemeDataToLight.colorScheme.primary,
                 ),
                 title: const Text(
                   'Notification',

@@ -1,3 +1,4 @@
+import 'package:adv_flutter_ch1/routes/routes.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.2/view/stepper.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.4/provider/change_theme_screen_provider.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.4/view/change_theme.dart';
@@ -11,16 +12,25 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 bool theme = false;
+bool isHomed = false;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
 
   theme = sharedPreferences.getBool('theme') ?? false;
+  isHomed = sharedPreferences.getBool('home') ?? false;
 
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => ChangeThemeScreenProvider(theme),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => ChangeThemeScreenProvider(theme),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => IntroScreenProvider(isHomed),
+        ),
+      ],
       builder: (context, child) => const MyApp(),
     ),
   );
@@ -38,10 +48,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     ChangeThemeScreenProvider changeThemeScreenProviderTrue =
         Provider.of<ChangeThemeScreenProvider>(context, listen: true);
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const ChangeTheme(),
+      home: Provider.of<IntroScreenProvider>(context).isHome ? const ChangeTheme() : const IntroScreen(),
       theme: changeThemeDataToLight,
       darkTheme: changeThemeDataToDark,
       themeMode: changeThemeScreenProviderTrue.isDark

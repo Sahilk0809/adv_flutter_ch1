@@ -1,5 +1,11 @@
+import 'package:adv_flutter_ch1/screens/Lec-1.4/view/change_theme.dart';
+import 'package:adv_flutter_ch1/screens/Lec-1.5(2)/provider/intro_screen_provider.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../../../main.dart';
+import '../../../../utils/global.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -15,21 +21,23 @@ class IntroScreen extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(18.0),
             child: CarouselSlider.builder(
-              itemCount: data.length,
-              options: CarouselOptions(
-                aspectRatio: 9 / 20,
-              ),
-              itemBuilder: (context, index, realIndex) => introScreen(
-                height,
-                width,
-                data[index]['img'],
-                data[index]['text1'],
-                data[index]['text2'],
-                data[index]['text3'],
-                data[index]['text4'],
-                data[index]['text5'],
-              ),
-            ),
+                itemCount: data.length,
+                options: CarouselOptions(
+                  aspectRatio: 9 / 20,
+                ),
+                itemBuilder: (context, index, realIndex) {
+                  return introScreen(
+                    height,
+                    width,
+                    data[index]['img'],
+                    data[index]['text1'],
+                    data[index]['text2'],
+                    data[index]['text3'],
+                    data[index]['text4'],
+                    data[index]['text5'],
+                    context,
+                  );
+                }),
           ),
         ),
       ),
@@ -37,7 +45,9 @@ class IntroScreen extends StatelessWidget {
   }
 
   Column introScreen(double height, double width, String img, String text1,
-      String text2, String text3, String text4, String text5) {
+      String text2, String text3, String text4, String text5, context) {
+    var introScreenProviderFalse =
+        Provider.of<IntroScreenProvider>(context, listen: false);
     return Column(
       children: [
         SizedBox(
@@ -114,19 +124,30 @@ class IntroScreen extends StatelessWidget {
         SizedBox(
           height: height * 0.06,
         ),
-        Container(
-          alignment: Alignment.center,
-          height: height * 0.05,
-          width: width * 0.5,
-          margin: const EdgeInsets.all(10),
-          decoration: BoxDecoration(
-            color: Colors.amber,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: const Text(
-            'Next',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
+        GestureDetector(
+          onTap: () {
+            introScreenProviderFalse.checkIsHome();
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const ChangeTheme(),
+              ),
+            );
+          },
+          child: Container(
+            alignment: Alignment.center,
+            height: height * 0.05,
+            width: width * 0.5,
+            margin: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Colors.amber,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: const Text(
+              'Next',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
@@ -146,30 +167,3 @@ class IntroScreen extends StatelessWidget {
     );
   }
 }
-
-List data = [
-  {
-    'img': 'asset/girl.png',
-    'text1': 'Brows',
-    'text2': 'App',
-    'text3': 'and Order Now',
-    'text4': 'We have many recipes for you',
-    'text5': 'Go and select food what you want',
-  },
-  {
-    'img': 'asset/hakkaNoddle.jpg',
-    'text1': 'Best',
-    'text2': 'Delicious',
-    'text3': 'Food in our Area',
-    'text4': 'We provide best food to our',
-    'text5': 'customer healthy and organic',
-  },
-  {
-    'img': 'asset/chicken.jpg',
-    'text1': 'We Provide',
-    'text2': 'Fast',
-    'text3': 'Food service',
-    'text4': 'We provide organic food service',
-    'text5': 'our customer from anywhere',
-  },
-];

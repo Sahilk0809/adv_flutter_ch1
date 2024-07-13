@@ -148,4 +148,11 @@ https://github.com/user-attachments/assets/1d5e0e9d-ee29-46b9-97d6-6d1bfd2dd217
 
 https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/d6258d32-b449-4c86-a2d9-53abf294ded7
 
+# 1.5 One Time Intro Screen in Flutter 
 
+<img src="https://github.com/user-attachments/assets/4007b3ef-6160-46ec-ae4f-8aca2e303e68" height=65% width=22%>
+<img src="https://github.com/user-attachments/assets/519fac02-bb4c-4d4c-9c4a-8bcbcfcde358" height=65% width=22%>
+<img src="https://github.com/user-attachments/assets/25570e2e-c49b-4784-956a-390ef20b9fc0" height=65% width=22%>
+<img src="https://github.com/user-attachments/assets/246dd64f-f366-4426-b59b-6a3fa97817de" height=65% width=22%>
+
+https://github.com/user-attachments/assets/4be9323b-e71b-493c-b7dc-1d9efcb9acb6

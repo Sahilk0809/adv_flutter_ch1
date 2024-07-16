@@ -6,6 +6,8 @@ import 'package:adv_flutter_ch1/screens/Lec-1.5(2)/provider/intro_screen_provide
 import 'package:adv_flutter_ch1/screens/Lec-1.5(2)/view/introscreen/introscreen.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.5/provider/homeprovider.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.5/view/homesceen/homescreen.dart';
+import 'package:adv_flutter_ch1/screens/Lec-1.6/provider/url_launcher_provider.dart';
+import 'package:adv_flutter_ch1/screens/Lec-1.6/view/url_launcher_screen.dart';
 import 'package:adv_flutter_ch1/utils/global.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -30,6 +32,9 @@ Future<void> main() async {
         ChangeNotifierProvider(
           create: (context) => IntroScreenProvider(isHomed),
         ),
+        ChangeNotifierProvider(
+          create: (context) => UrlLauncherProvider(),
+        ),
       ],
       builder: (context, child) => const MyApp(),
     ),
@@ -50,7 +55,7 @@ class _MyAppState extends State<MyApp> {
         Provider.of<ChangeThemeScreenProvider>(context, listen: true);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Provider.of<IntroScreenProvider>(context).isHome ? const ChangeTheme() : const IntroScreen(),
+      home: const UrlLauncherScreen(),
       theme: changeThemeDataToLight,
       darkTheme: changeThemeDataToDark,
       themeMode: changeThemeScreenProviderTrue.isDark

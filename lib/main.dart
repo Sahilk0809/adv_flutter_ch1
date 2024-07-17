@@ -33,7 +33,7 @@ Future<void> main() async {
           create: (context) => IntroScreenProvider(isHomed),
         ),
         ChangeNotifierProvider(
-          create: (context) => UrlLauncherProvider(),
+          create: (context) => LauncherProvider(),
         ),
       ],
       builder: (context, child) => const MyApp(),

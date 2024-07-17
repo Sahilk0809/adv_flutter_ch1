@@ -8,6 +8,8 @@ import 'package:adv_flutter_ch1/screens/Lec-1.5/provider/homeprovider.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.5/view/homesceen/homescreen.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.6/provider/url_launcher_provider.dart';
 import 'package:adv_flutter_ch1/screens/Lec-1.6/view/url_launcher_screen.dart';
+import 'package:adv_flutter_ch1/screens/Lec-1.7/provider/provider.dart';
+import 'package:adv_flutter_ch1/screens/Lec-1.7/view/gallery_screen1.dart';
 import 'package:adv_flutter_ch1/utils/global.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -35,6 +37,9 @@ Future<void> main() async {
         ChangeNotifierProvider(
           create: (context) => LauncherProvider(),
         ),
+        ChangeNotifierProvider(
+          create: (context) => GalleryScreenProvider(),
+        ),
       ],
       builder: (context, child) => const MyApp(),
     ),
@@ -55,7 +60,7 @@ class _MyAppState extends State<MyApp> {
         Provider.of<ChangeThemeScreenProvider>(context, listen: true);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const UrlLauncherScreen(),
+      home: const GalleryScreen1(),
       theme: changeThemeDataToLight,
       darkTheme: changeThemeDataToDark,
       themeMode: changeThemeScreenProviderTrue.isDark

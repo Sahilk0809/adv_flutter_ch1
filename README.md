@@ -137,6 +137,11 @@ return Consumer<Counter>(
 );  
 ```
 
+## Provider Tree
+
+<img src="https://github.com/sanjuafre123/adv_flutter_ch1/assets/148860124/5dd9c104-239c-49ae-9af2-7b0753d3dbeb" height=65%>
+
+
 # 1.4 Provider & Change Theme using Provider and Shared Preferences
 
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/dd622482-5de2-4bb1-8f15-541094e2c4d0" height=65% width=22%>

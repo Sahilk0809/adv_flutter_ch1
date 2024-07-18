@@ -19,6 +19,8 @@ themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/d5e771d6-40bc-4f33-9cbe-4aa891d2b8ed" height=65% width=22%>
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/28812f1f-3a5f-4d1a-a6d0-b2224e9bf2b8" height=65% width=22%>
 
+<a href="https://github.com/Sahilk0809/adv_flutter_ch1/tree/master/lib/screens/Lec-1.2/view"> Click for the source code </a>
+
 # 1.3 Provider Tree
 
 ## 1) What is State?

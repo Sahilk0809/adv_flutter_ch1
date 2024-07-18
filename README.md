@@ -152,6 +152,8 @@ https://github.com/user-attachments/assets/1d5e0e9d-ee29-46b9-97d6-6d1bfd2dd217
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/b50590a9-ed23-41b0-9b5e-a876032caecd" height=65% width=22%>
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/ca77077c-651c-490d-abe0-a067614bbd14" height=65% width=22%>
 
+<a href="https://github.com/Sahilk0809/adv_flutter_ch1/tree/master/lib/screens/Lec-1.5"> Click here for the source code </a>
+
 https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/d6258d32-b449-4c86-a2d9-53abf294ded7
 
 # 1.5 One Time Intro Screen in Flutter 

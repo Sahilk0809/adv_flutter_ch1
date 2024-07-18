@@ -182,6 +182,6 @@ https://github.com/user-attachments/assets/4be9323b-e71b-493c-b7dc-1d9efcb9acb6
 
 <img src="https://github.com/user-attachments/assets/d69a956a-aa5f-4cae-92ec-fee548b76de9" height=65% width=22%>
 
-<a href="https://github.com/Sahilk0809/adv_flutter_ch1/tree/master/lib/screens/Lec-1.7> Click here for the source code </a>
+<a href="https://github.com/Sahilk0809/adv_flutter_ch1/tree/master/lib/screens/Lec-1.6"> Click here for the source code </a>
 
-[urlRecord.webm](https://github.com/user-attachments/assets/827e59b6-3550-4be5-9b66-7b5b4848c5b1)
+https://github.com/user-attachments/assets/827e59b6-3550-4be5-9b66-7b5b4848c5b1

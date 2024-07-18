@@ -188,7 +188,7 @@ class UrlLauncherScreen extends StatelessWidget {
                               width: 30,
                             ),
                             Image.asset(
-                              'asset/github.png',
+                              'assets/github.png',
                               height: 35,
                             ),
                             const SizedBox(
@@ -232,7 +232,7 @@ class UrlLauncherScreen extends StatelessWidget {
                               width: 25,
                             ),
                             Image.asset(
-                              'asset/ins.png',
+                              'assets/ins.png',
                               height: 42,
                             ),
                             const SizedBox(
@@ -273,7 +273,7 @@ class UrlLauncherScreen extends StatelessWidget {
                               width: 30,
                             ),
                             Image.asset(
-                              'asset/LinkedIn.webp',
+                              'assets/LinkedIn.webp',
                               height: 35,
                             ),
                             const SizedBox(

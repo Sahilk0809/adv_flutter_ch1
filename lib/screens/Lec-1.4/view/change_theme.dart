@@ -50,7 +50,7 @@ class ChangeTheme extends StatelessWidget {
                   shape: BoxShape.circle,
                 ),
                 child: Image.asset(
-                  'asset/avtar2.png',
+                  'assets/avtar2.png',
                   fit: BoxFit.cover,
                 ),
               ),

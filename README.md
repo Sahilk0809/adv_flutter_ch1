@@ -142,6 +142,8 @@ return Consumer<Counter>(
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/dd622482-5de2-4bb1-8f15-541094e2c4d0" height=65% width=22%>
 <img src="https://github.com/Sahilk0809/adv_flutter_ch1/assets/149374235/4adb7169-1f74-4014-aebd-82f42a7ef422" height=65% width=22%>
 
+<a href="https://github.com/Sahilk0809/adv_flutter_ch1/blob/master/lib/screens/Lec-1.4/view/change_theme.dart"> Click here for the source code </a>
+
 https://github.com/user-attachments/assets/1d5e0e9d-ee29-46b9-97d6-6d1bfd2dd217
 
 # 1.5 Quotes Data Solving with Provider

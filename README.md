@@ -200,6 +200,37 @@ https://github.com/user-attachments/assets/827e59b6-3550-4be5-9b66-7b5b4848c5b1
 
 # 1.7 Photo Gallery With Biometric Authentication
 
+## Example
+
+```bash
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:local_auth/local_auth.dart';
+
+class GalleryScreenProvider extends ChangeNotifier{
+  final localAuth = LocalAuthentication();
+  bool didAuthenticate = false;
+
+  Future<void> authentication() async {
+    List<BiometricType> availableBiometrics;
+    try {
+      availableBiometrics = await localAuth.getAvailableBiometrics();
+    } on PlatformException catch (e) {
+      'device not supported';
+    }
+    try {
+      didAuthenticate = await localAuth.authenticate(
+        localizedReason: 'Please authenticate to access secure data',
+      );
+      didAuthenticate = didAuthenticate;
+      notifyListeners();
+    } on PlatformException catch (e) {
+      print(e);
+    }
+  }
+}
+```
+
 <img src="https://github.com/user-attachments/assets/55372b67-ad0f-4232-ac3f-e5d5b727a652" height=65% width=22%>
 <img src="https://github.com/user-attachments/assets/17333f51-b0a5-4c84-8a43-53f2eb28de05" height=65% width=22%>
 

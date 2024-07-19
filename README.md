@@ -198,3 +198,10 @@ https://github.com/user-attachments/assets/827e59b6-3550-4be5-9b66-7b5b4848c5b1
 
 <img src="https://github.com/user-attachments/assets/55372b67-ad0f-4232-ac3f-e5d5b727a652" height=65% width=22%>
 <img src="https://github.com/user-attachments/assets/17333f51-b0a5-4c84-8a43-53f2eb28de05" height=65% width=22%>
+
+
+## Description
+
+A photo gallery with biometric authentication provides a secure way to access and manage your photos. Using advanced biometric methods like fingerprint or facial recognition, this gallery ensures that only authorized users can view or modify the images. This combination of security and convenience offers peace of mind, knowing that personal photos are protected from unauthorized access.
+
+<a href=""> Click here for the source code </a>

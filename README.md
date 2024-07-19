@@ -186,6 +186,10 @@ https://github.com/user-attachments/assets/4be9323b-e71b-493c-b7dc-1d9efcb9acb6
 
 <img src="https://github.com/user-attachments/assets/d69a956a-aa5f-4cae-92ec-fee548b76de9" height=65% width=22%>
 
+## Description
+
+A "Contact Us" page built with Flutter provides users with essential contact information and interactive features. It includes details such as phone number, email address, and links to social media profiles.
+
 <a href="https://github.com/Sahilk0809/adv_flutter_ch1/tree/master/lib/screens/Lec-1.6"> Click here for the source code </a>
 
 https://github.com/user-attachments/assets/827e59b6-3550-4be5-9b66-7b5b4848c5b1

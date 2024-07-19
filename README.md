@@ -205,3 +205,5 @@ https://github.com/user-attachments/assets/827e59b6-3550-4be5-9b66-7b5b4848c5b1
 A photo gallery with biometric authentication provides a secure way to access and manage your photos. Using advanced biometric methods like fingerprint or facial recognition, this gallery ensures that only authorized users can view or modify the images. This combination of security and convenience offers peace of mind, knowing that personal photos are protected from unauthorized access.
 
 <a href="https://github.com/Sahilk0809/adv_flutter_ch1/tree/master/lib/screens/Lec-1.7"> Click here for the source code </a>
+
+https://github.com/user-attachments/assets/63766bca-071d-4d8c-918e-321c48b25370
